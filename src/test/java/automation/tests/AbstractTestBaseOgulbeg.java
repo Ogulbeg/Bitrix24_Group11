@@ -18,7 +18,7 @@ import org.testng.internal.TestResult;
 import java.io.IOException;
 import java.util.Date;
 
-public abstract class AbstractTestBase {
+public abstract class AbstractTestBaseOgulbeg {
     protected WebDriverWait wait;
     protected Actions actions;
 protected WebDriver driver;

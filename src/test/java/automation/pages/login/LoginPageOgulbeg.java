@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPageOgulbeg {
 
-    public LoginPage(){
+    public LoginPageOgulbeg(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
     @FindBy(name = "USER_LOGIN")

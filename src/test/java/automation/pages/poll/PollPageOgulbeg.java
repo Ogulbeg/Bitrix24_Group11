@@ -1,17 +1,13 @@
 package automation.pages.poll;
 
-import automation.pages.AbstractPageBase;
+import automation.pages.AbstractPageBaseOgulbeg;
 import automation.utilities.BrowserUtils;
-import automation.utilities.Driver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
 
-public class PollPage extends AbstractPageBase {
+public class PollPageOgulbeg extends AbstractPageBaseOgulbeg {
     @FindBy(id="bx-b-uploadfile-blogPostForm")
     public WebElement uploadedFileIcon;
 

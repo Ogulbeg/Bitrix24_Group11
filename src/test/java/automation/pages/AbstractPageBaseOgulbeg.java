@@ -26,7 +26,7 @@ import java.util.Date;
  * We cannot really create a dedicgtaed page class to store
  * elements form that menu
  */
-public abstract class AbstractPageBase {
+public abstract class AbstractPageBaseOgulbeg {
 
 
     protected WebDriver driver = Driver.getDriver();
@@ -35,7 +35,7 @@ public abstract class AbstractPageBase {
     protected ExtentReports extentReports;
     protected ExtentHtmlReporter extentHtmlReporter;
     protected ExtentTest extentTest;
-    public AbstractPageBase (){
+    public AbstractPageBaseOgulbeg(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
     public void navigateTo (String tabName ){

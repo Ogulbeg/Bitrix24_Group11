@@ -1,22 +1,21 @@
 package automation.tests.pool;
 
-import automation.pages.login.LoginPage;
-import automation.pages.poll.PollPage;
+import automation.pages.login.LoginPageOgulbeg;
+import automation.pages.poll.PollPageOgulbeg;
 
-import automation.tests.AbstractTestBase;
+import automation.tests.AbstractTestBaseOgulbeg;
 import automation.utilities.BrowserUtils;
 import automation.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.LocalDate;
 import java.util.List;
 
-public class PollTest extends AbstractTestBase {
+public class PollTestOgulbeg extends AbstractTestBaseOgulbeg {
 
 private By textBarEditorBy =By.id("bx-html-editor-tlbr-idPostFormLHE_blogPostForm");
 
@@ -30,9 +29,9 @@ private By textBarEditorBy =By.id("bx-html-editor-tlbr-idPostFormLHE_blogPostFor
     @Test
     public void verifyVisibilityOfTextBar(){
         test = reports.createTest("Verify visibility of text editor toolbar");
-        LoginPage loginPage = new LoginPage();
-        loginPage.login();
-        PollPage pollPage = new PollPage();
+        LoginPageOgulbeg loginPageOgulbeg = new LoginPageOgulbeg();
+        loginPageOgulbeg.login();
+        PollPageOgulbeg pollPage = new PollPageOgulbeg();
         pollPage.navigateTo("Poll");
         pollPage.makeEditorTextBarVisible();
 
@@ -44,9 +43,9 @@ private By textBarEditorBy =By.id("bx-html-editor-tlbr-idPostFormLHE_blogPostFor
 @Test
     public void verifyUploadingFile(){
     test = reports.createTest("Verify file uploading");
-    LoginPage loginPage = new LoginPage();
-    loginPage.login();
-    PollPage pollPage = new PollPage();
+    LoginPageOgulbeg loginPageOgulbeg = new LoginPageOgulbeg();
+    loginPageOgulbeg.login();
+    PollPageOgulbeg pollPage = new PollPageOgulbeg();
     pollPage.navigateTo("Poll");
     BrowserUtils.wait(2);
 
@@ -59,9 +58,9 @@ private By textBarEditorBy =By.id("bx-html-editor-tlbr-idPostFormLHE_blogPostFor
 @Test
     public void verifyAttachingLink(){
     test = reports.createTest("Verify attaching the link");
-    LoginPage loginPage = new LoginPage();
-    loginPage.login();
-    PollPage pollPage = new PollPage();
+    LoginPageOgulbeg loginPageOgulbeg = new LoginPageOgulbeg();
+    loginPageOgulbeg.login();
+    PollPageOgulbeg pollPage = new PollPageOgulbeg();
     pollPage.navigateTo("Poll");
     BrowserUtils.wait(2);
 
@@ -75,9 +74,9 @@ private By textBarEditorBy =By.id("bx-html-editor-tlbr-idPostFormLHE_blogPostFor
 @Test
 public void verifyVideoInsert(){
     test = reports.createTest("Verify inserting the link video");
-    LoginPage loginPage = new LoginPage();
-    loginPage.login();
-    PollPage pollPage = new PollPage();
+    LoginPageOgulbeg loginPageOgulbeg = new LoginPageOgulbeg();
+    loginPageOgulbeg.login();
+    PollPageOgulbeg pollPage = new PollPageOgulbeg();
     pollPage.navigateTo("Poll");
     BrowserUtils.wait(2);
 
@@ -95,9 +94,9 @@ public void verifyVideoInsert(){
 @Test
     public void creatingTheQuote(){
     test = reports.createTest("Verify creating the quote");
-    LoginPage loginPage = new LoginPage();
-    loginPage.login();
-    PollPage pollPage = new PollPage();
+    LoginPageOgulbeg loginPageOgulbeg = new LoginPageOgulbeg();
+    loginPageOgulbeg.login();
+    PollPageOgulbeg pollPage = new PollPageOgulbeg();
     pollPage.navigateTo("Poll");
     BrowserUtils.wait(2);
 
