@@ -26,7 +26,7 @@ import java.util.Date;
  * We cannot really create a dedicgtaed page class to store
  * elements form that menu
  */
-public class AbstractPageBase {
+public abstract class AbstractPageBase {
 
 
     protected WebDriver driver = Driver.getDriver();
